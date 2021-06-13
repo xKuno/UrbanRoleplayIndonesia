@@ -1,0 +1,15 @@
+.chat-message-jail {
+    display: inline-block !important;
+    padding: 0.6vw;
+    padding-top: 0.6vw;
+    padding-bottom: 0.7vw;
+    margin: 0.1vw;
+    margin-left: 0.4vw;
+    border-radius: 10px;
+    background-color: rgba(255, 17, 0, 0.89);
+    width: fit-content;
+    max-width: 100%;
+    overflow: hidden;
+    word-break: break-word;
+}
+  

@@ -1,0 +1,26 @@
+local tiempo = 2000 -- 1000 ms = 1s
+local isTaz = false
+
+Citizen.CreateThread(function()
+	while true do
+		Citizen.Wait(0)
+		
+		if IsPedBeingStunned(GetPlayerPed(-1)) then
+			SetPedToRagdoll(GetPlayerPed(-1), 4000, 4000, 0, 0, 0, 0)
+		end
+		
+		if IsPedBeingStunned(GetPlayerPed(-1)) and not isTaz then
+			isTaz = true
+			SetTimecycleModifier("REDMIST_blend")
+			ShakeGameplayCam("FAMILY5_DRUG_TRIP_SHAKE", 1.0)
+		elseif not IsPedBeingStunned(GetPlayerPed(-1)) and isTaz then
+			isTaz = false
+			Wait(2000)
+			SetTimecycleModifier("hud_def_desat_Trevor")
+			Wait(12500)
+      		SetTimecycleModifier("")
+			SetTransitionTimecycleModifier("")
+			StopGameplayCamShaking()
+		end
+	end
+end)

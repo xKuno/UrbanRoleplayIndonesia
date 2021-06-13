@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SSetupData>
+	<deviceName>dlc_malibu_mansion</deviceName>
+	<datFile>content.xml</datFile>
+	<timeStamp>07.04.2020 06:08:23</timeStamp>
+	<nameHash>malibu_mansion</nameHash>
+	<contentChangeSets />
+	<contentChangeSetGroups>
+		<Item>
+			<NameHash>GROUP_EARLY_ON</NameHash>
+			<ContentChangeSets>
+				<Item>CCS_malibu_mansion_NG_INIT</Item>
+			</ContentChangeSets>
+		</Item>
+		<Item>
+			<NameHash>GROUP_UPDATE_STREAMING</NameHash>
+			<ContentChangeSets>
+				<Item>CCS_malibu_mansion_NG_STREAMING</Item>
+				<Item>CCS_malibu_mansion_NG_STREAMING_MAP</Item>
+			</ContentChangeSets>
+		</Item>
+		<Item>
+			<NameHash>GROUP_UPDATE_TEXT</NameHash>
+			<ContentChangeSets>
+				<Item>CCS_malibu_mansion_NG_TEXT</Item>
+			</ContentChangeSets>
+		</Item>
+	</contentChangeSetGroups>
+	<startupScript />
+	<scriptCallstackSize value="0" />
+	<type>EXTRACONTENT_LEVEL_PACK</type>
+	<order value="2" />
+	<minorOrder value="0" />
+	<isLevelPack value="true" />
+	<dependencyPackHash />
+	<requiredVersion />
+	<subPackCount value="0" />
+</SSetupData>
